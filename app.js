@@ -1,5 +1,3 @@
-// app.js
-
 const readline = require('readline');
 const calculator = require('./calculator');
 
@@ -16,7 +14,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-console.log("Benvenuto nella Calcolatrice Avanzata!");
+console.log("Benvenuto nella Super Calcolatrice Avanzata!");
 console.log("Operazioni disponibili:");
 console.log("1 - Addizione");
 console.log("2 - Sottrazione");
