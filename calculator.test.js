@@ -1,3 +1,7 @@
+// calculator.test.js
+
+const calculator = require('./calculator');
+
 describe('Operazioni base di addizione', () => {
     test('2 + 2 dovrebbe essere 4', () => {
         const result = calculator.add(2, 2);
