@@ -1,0 +1,29 @@
+# Dipendenze e output
+node_modules/               # cartella dei moduli npm :contentReference[oaicite:8]{index=8}
+dist/                       # build ES/Babel
+
+# Log
+logs/
+*.log                       # file di log :contentReference[oaicite:9]{index=9}
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambienti e cache
+.env*                       # variabili d’ambiente sensitive :contentReference[oaicite:10]{index=10}
+.npm/                       # cache npm
+.cache/                     # cache generiche
+
+# Report e coverage
+coverage/                   # directory di coverage :contentReference[oaicite:11]{index=11}
+*.lcov
+
+# IDE/editor
+.vscode/
+.idea/                      # project files di IntelliJ/WebStorm :contentReference[oaicite:12]{index=12}
+*.swp                       # vi/vim swap files
+*~
+
+# Sistema operativo
+.DS_Store                   # macOS :contentReference[oaicite:13]{index=13}
+Thumbs.db                   # Windows
