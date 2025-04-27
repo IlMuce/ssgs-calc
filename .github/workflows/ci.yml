@@ -27,11 +27,4 @@
         - name: Run tests
           run: npm test
   
-        # 7. (Opzionale) Pubblicazione dei report di coverage su Codecov
-        - name: Upload coverage report to Codecov
-          uses: codecov/codecov-action@v3
-          with:
-            files: ./coverage/lcov.info
-            flags: unit
-            fail_ci_if_error: true
   

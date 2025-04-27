@@ -1,7 +1,5 @@
 # SSGS Calculator
 
-![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
-
 Una semplice calcolatrice da riga di comando implementata in Node.js che supporta le operazioni di base:
 
 - Addizione  
