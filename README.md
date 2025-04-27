@@ -42,14 +42,3 @@ I test unitari sono scritti con Jest e coprono al 100% il modulo calculator.js.
     npm test
 
 Se la coverage scende sotto il 100%, il comando terminerà con errore.
-
-## Struttura del progetto
-
-├── .github
-│   └── workflows
-│       └── ci.yml         # Workflow CI per GitHub Actions
-├── calculator.js          # Modulo con le funzioni aritmetiche
-├── calculator.test.js     # Test unitari con Jest
-├── app.js                 # Interfaccia a linea di comando
-├── package.json           # Configurazione npm e Jest
-└── .gitignore             # File per escludere node_modules, coverage, ecc.
