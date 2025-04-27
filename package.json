@@ -3,13 +3,34 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "calculator.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/app.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "coverageReporters": [
+      "text",
+      "lcov"
+    ],
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "jest": "^29.7.0"
-  }
-}
+      "author": "",
+      "license": "ISC",
+      "description": "",
+      "devDependencies": {
+        "jest": "^29.7.0"
+      }
+    }
