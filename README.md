@@ -23,7 +23,7 @@ Una semplice calcolatrice da riga di comando implementata in Node.js che support
    git clone https://github.com/IlMuce/ssgs-calc.git
    cd ssgs-calc
 2. Installa le dipendenze:
-    npm install
+    npm ci    # da usare per installazioni dopo aver clonato il repository
 
 ## Utilizzo
 
@@ -40,3 +40,9 @@ I test unitari sono scritti con Jest e coprono al 100% il modulo calculator.js.
     npm test
 
 Se la coverage scende sotto il 100%, il comando terminerà con errore.
+
+## Pipeline CI
+
+Questo progetto è dotato di un workflow GitHub Actions che esegue automaticamente i test (con **Jest** e coverage al 100%) ad ogni **push** e **pull request** sul branch `main`.  
+- **Cosa fa:** esegue `npm ci`, poi `npm test -- --coverage`  
+- **File di configurazione:** `.github/workflows/ci.yml`

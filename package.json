@@ -1,18 +1,31 @@
 {
   "name": "ssgs-calc",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Calcolatrice CLI in Node.js con test Jest e CI",
+  "main": "app.js", 
   "scripts": {
     "test": "jest --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IlMuce/ssgs-calc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IlMuce/ssgs-calc/issues"
+  },
+  "homepage": "https://github.com/IlMuce/ssgs-calc#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "IlMuce",
+  "keywords": ["calculator","cli","nodejs","jest","ci"],
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom": [
-      "calculator.js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "<rootDir>/app.js"
-    ],
+    "collectCoverageFrom": ["src/**/*.js"],
+    "coveragePathIgnorePatterns": ["<rootDir>/src/app.js"],
     "coverageThreshold": {
       "global": {
         "branches": 100,
@@ -20,17 +33,7 @@
         "lines": 100,
         "statements": 100
       }
-    }
-  },
-  "coverageReporters": [
-      "text",
-      "lcov"
-    ],
-  "keywords": [],
-      "author": "",
-      "license": "ISC",
-      "description": "",
-      "devDependencies": {
-        "jest": "^29.7.0"
-      }
-    }
+    },
+    "coverageReporters": ["text", "lcov"]
+  }
+}
