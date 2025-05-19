@@ -12,7 +12,7 @@ Una semplice calcolatrice da riga di comando implementata in Node.js che support
 
 ## Prerequisiti
 
-- Node.js v18 o superiore  
+- Node.js v20 o superiore  
 - npm (gestore pacchetti di Node.js)  
 
 ---
@@ -44,5 +44,5 @@ Se la coverage scende sotto il 100%, il comando terminerà con errore.
 ## Pipeline CI
 
 Questo progetto è dotato di un workflow GitHub Actions che esegue automaticamente i test (con **Jest** e coverage al 100%) ad ogni **push** e **pull request** sul branch `main`.  
-- **Cosa fa:** esegue `npm ci`, poi `npm test -- --coverage`  
+- **Cosa fa:** esegue `npm ci`, poi `npm test`  
 - **File di configurazione:** `.github/workflows/ci.yml`
